@@ -3,7 +3,8 @@
 ;; Copyright (c) 2012 Roland Walker
 ;;
 ;; Author: Roland Walker walker@pobox.com
-;; URL: https://github.com/rolandwalker/ido-load-library.el
+;; Homepage: http://github.com/rolandwalker/ido-load-library
+;; URL: http://raw.github.com/rolandwalker/ido-load-library/master/ido-load-library.el
 ;; Version: 0.1.0
 ;; Last-Updated:  27 Aug 2012
 ;; EmacsWiki: IdoLoadLibrary
