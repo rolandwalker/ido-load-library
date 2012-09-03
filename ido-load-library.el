@@ -136,7 +136,8 @@
   :version "0.1.0"
   :link '(emacs-commentary-link "ido-load-library")
   :prefix "ido-load-library-"
-  :group 'extensions)
+  :group 'abbreviations
+  :group 'convenience)
 
 (defcustom ido-load-library-less-feedback nil
   "Give less echo area feedback."
