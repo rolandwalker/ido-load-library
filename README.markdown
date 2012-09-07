@@ -1,9 +1,18 @@
 Overview
 ========
+
 Load-library alternative for Emacs using `ido-completing-read`.
+
+Quickstart
+----------
+
+	(require 'ido-load-library)
+
+	M-x ido-load-library RET
 
 ido-load-library
 ----------------
+
 Ido-load-library is an alternative to `load-library` which uses
 `ido-completing-read` for completion against all available
 libraries in your `load-path`.
@@ -23,6 +32,7 @@ or safely aliased to load-library
 
 ido-load-library-find
 ---------------------
+
 The interactive command `ido-load-library-find` is also
 available.  Like `ido-load-library`, it searches your
 `load-path`, but instead of loading the selected library,
@@ -30,17 +40,20 @@ it visits the file in a buffer.
 
 Bugs
 ----
-When invalidating the disk cache, ido-load-library only checks
-whether load-path has changed, not whether new files were added
+
+When invalidating the disk cache, `ido-load-library` only checks
+whether `load-path` has changed, not whether new files were added
 to existing paths.  Workarounds:
 
-1.  Use ELPA/package.el, in which case this assumption always works.
+1.  Install libraries using ELPA/package.el, in which case this
+    assumption always works.
 2.  Wait for the cache to expire (7 days).
-3.  Give universal prefix argument to `ido-load-library'
+3.  Give universal prefix argument to `ido-load-library`
     to force invalidation of the cache.
 
 Compatibility and Requirements
 ------------------------------
+
 Tested on GNU Emacs versions 23.3 and 24.1
 
 Requires persistent-soft.el
