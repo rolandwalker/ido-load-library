@@ -123,18 +123,14 @@
 
 ;;; requires
 
-(eval-when-compile
-  (require 'cl))
+;; for callf, incf, assert, remove-if, remove-if-not
+(require 'cl)
 
 (autoload 'persistent-soft-store     "persistent-soft" "Under SYMBOL, store VALUE in the LOCATION persistent data store."   t)
 (autoload 'persistent-soft-fetch     "persistent-soft" "Return the value for SYMBOL in the LOCATION persistent data store." t)
 (autoload 'persistent-soft-exists-p  "persistent-soft" "Return t if SYMBOL exists in the LOCATION persistent data store."   t)
 (autoload 'persistent-soft-flush     "persistent-soft" "Flush data for the LOCATION data store to disk."                    t)
-
 (autoload 'thing-at-point            "thingatpt"       "Return the THING at point."                                       nil)
-
-(declare-function remove-if          "cl-seq.el")
-(declare-function remove-if-not      "cl-seq.el")
 
 ;;; customizable variables
 
