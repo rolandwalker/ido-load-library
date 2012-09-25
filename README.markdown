@@ -56,4 +56,4 @@ Compatibility and Requirements
 
 Tested on GNU Emacs versions 23.3 and 24.1
 
-Requires persistent-soft.el
+Uses if present: persistent-soft.el (Recommended)
