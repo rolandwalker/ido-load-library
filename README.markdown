@@ -32,7 +32,7 @@ or bound via something like
 (define-key global-map (kbd "C-c l") 'ido-load-library)
 ```
 
-or safely aliased to load-library
+or safely aliased to `load-library`
 
 ```lisp
 (defalias 'load-library 'ido-load-library)

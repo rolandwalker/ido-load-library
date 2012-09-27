@@ -41,7 +41,7 @@
 ;;
 ;;     (define-key global-map (kbd "C-c l") 'ido-load-library)
 ;;
-;; or safely aliased to load-library
+;; or safely aliased to `load-library'
 ;;
 ;;     (defalias 'load-library 'ido-load-library)
 ;;
