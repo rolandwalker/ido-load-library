@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/rolandwalker/ido-load-library.png)](http://travis-ci.org/rolandwalker/ido-load-library)
+
 Overview
 ========
 
