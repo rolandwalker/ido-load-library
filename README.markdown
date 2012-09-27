@@ -8,9 +8,11 @@ Load-library alternative for Emacs using `ido-completing-read`.
 Quickstart
 ----------
 
-	(require 'ido-load-library)
-
-	M-x ido-load-library RET
+```lisp
+(require 'ido-load-library)
+ 
+;; execute M-x ido-load-library RET
+```
 
 ido-load-library
 ----------------
@@ -26,11 +28,15 @@ though not bound to any key.  It can be executed via
 
 or bound via something like
 
-	(define-key global-map (kbd "C-c l") 'ido-load-library)
+```lisp
+(define-key global-map (kbd "C-c l") 'ido-load-library)
+```
 
 or safely aliased to load-library
 
-	(defalias 'load-library 'ido-load-library)
+```lisp
+(defalias 'load-library 'ido-load-library)
+```
 
 ido-load-library-find
 ---------------------
