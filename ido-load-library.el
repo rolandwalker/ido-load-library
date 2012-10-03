@@ -258,15 +258,16 @@ With optional REGENERATE, force rebuilding the cache."
        (delete-dups ido-load-library-all-library-paths)
 
        (setq ido-load-library-load-path-saved load-path)
-       (persistent-softest-store 'ido-load-library-all-library-names ido-load-library-all-library-names
-                                 ido-load-library-use-persistent-storage
-                                 (round (* 60 60 24 ido-load-library-persistent-storage-expiration-days)))
-       (persistent-softest-store 'ido-load-library-all-library-paths ido-load-library-all-library-paths
-                                 ido-load-library-use-persistent-storage
-                                 (round (* 60 60 24 ido-load-library-persistent-storage-expiration-days)))
-       (persistent-softest-store 'ido-load-library-load-path-saved   ido-load-library-load-path-saved
-                                 ido-load-library-use-persistent-storage
-                                 (round (* 60 60 24 ido-load-library-persistent-storage-expiration-days)))
+       (let ((persistent-soft-inhibit-sanity-checks nil))
+         (persistent-softest-store 'ido-load-library-all-library-names ido-load-library-all-library-names
+                                   ido-load-library-use-persistent-storage
+                                   (round (* 60 60 24 ido-load-library-persistent-storage-expiration-days)))
+         (persistent-softest-store 'ido-load-library-all-library-paths ido-load-library-all-library-paths
+                                   ido-load-library-use-persistent-storage
+                                   (round (* 60 60 24 ido-load-library-persistent-storage-expiration-days)))
+         (persistent-softest-store 'ido-load-library-load-path-saved   ido-load-library-load-path-saved
+                                   ido-load-library-use-persistent-storage
+                                   (round (* 60 60 24 ido-load-library-persistent-storage-expiration-days))))
        (persistent-softest-flush ido-load-library-use-persistent-storage)
        (when progress
          (progress-reporter-done reporter)))))
