@@ -214,6 +214,15 @@ With optional PROGRESS, report progress building cache.
 With optional REGENERATE, force rebuilding the cache."
   (when (not (equal load-path ido-load-library-load-path-saved))
     (setq regenerate t))
+  (when (and ido-load-library-use-persistent-storage
+             (not (stringp (persistent-softest-fetch 'ido-load-library-data-version ido-load-library-use-persistent-storage))))
+    (setq regenerate t))
+  (when (and ido-load-library-use-persistent-storage
+             (stringp (persistent-softest-fetch 'ido-load-library-data-version ido-load-library-use-persistent-storage))
+             (version<
+              (persistent-softest-fetch 'ido-load-library-data-version ido-load-library-use-persistent-storage)
+              (get 'ido-load-library 'custom-version)))
+    (setq regenerate t))
   (when regenerate
     (setq ido-load-library-all-library-names nil)
     (persistent-softest-store 'ido-load-library-all-library-names nil
@@ -266,6 +275,9 @@ With optional REGENERATE, force rebuilding the cache."
                                    ido-load-library-use-persistent-storage
                                    (round (* 60 60 24 ido-load-library-persistent-storage-expiration-days)))
          (persistent-softest-store 'ido-load-library-load-path-saved   ido-load-library-load-path-saved
+                                   ido-load-library-use-persistent-storage
+                                   (round (* 60 60 24 ido-load-library-persistent-storage-expiration-days)))
+         (persistent-softest-store 'ido-load-library-data-version (get 'ido-load-library 'custom-version)
                                    ido-load-library-use-persistent-storage
                                    (round (* 60 60 24 ido-load-library-persistent-storage-expiration-days))))
        (persistent-softest-flush ido-load-library-use-persistent-storage)
