@@ -258,7 +258,7 @@ With optional REGENERATE, force rebuilding the cache."
        (delete-dups ido-load-library-all-library-paths)
 
        (setq ido-load-library-load-path-saved load-path)
-       (let ((persistent-soft-inhibit-sanity-checks nil))
+       (let ((persistent-soft-inhibit-sanity-checks t))
          (persistent-softest-store 'ido-load-library-all-library-names ido-load-library-all-library-names
                                    ido-load-library-use-persistent-storage
                                    (round (* 60 60 24 ido-load-library-persistent-storage-expiration-days)))
