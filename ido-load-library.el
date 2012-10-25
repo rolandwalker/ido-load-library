@@ -124,7 +124,7 @@
 ;;; Code:
 ;;
 
-;;; requires
+;;; requirements
 
 ;; for callf, incf, assert, remove-if, remove-if-not
 (require 'cl)
