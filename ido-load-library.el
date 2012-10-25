@@ -32,8 +32,8 @@
 ;;
 ;;     (require 'ido-load-library)
 ;;
-;; The interactive command `ido-load-library' is then available,
-;; though not bound to any key.  It can be executed via
+;; The interactive command `ido-load-library' is provided, though
+;; not bound to any key.  It can be executed via
 ;;
 ;;     M-x ido-load-library
 ;;
@@ -46,7 +46,7 @@
 ;;     (defalias 'load-library 'ido-load-library)
 ;;
 ;; The interactive command `ido-load-library-find' is also
-;; available.  Like `ido-load-library', it searches your
+;; provided.  Like `ido-load-library', it searches your
 ;; `load-path', but instead of loading the selected library,
 ;; it visits the file in a buffer.
 ;;

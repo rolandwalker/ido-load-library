@@ -14,15 +14,15 @@ Quickstart
 ;; execute M-x ido-load-library RET
 ```
 
-ido-load-library
-----------------
+command `ido-load-library`
+--------------------------
 
 Ido-load-library is an alternative to `load-library` which uses
 `ido-completing-read` for completion against all available
 libraries in your `load-path`.
 
-The interactive command `ido-load-library` is made available,
-though not bound to any key.  It can be executed via
+The interactive command `ido-load-library` is provided, though
+not bound to any key.  It can be executed via
 
 	M-x ido-load-library
 
@@ -38,11 +38,11 @@ or safely aliased to `load-library`
 (defalias 'load-library 'ido-load-library)
 ```
 
-ido-load-library-find
----------------------
+command `ido-load-library-find`
+-------------------------------
 
 The interactive command `ido-load-library-find` is also
-available.  Like `ido-load-library`, it searches your
+provided.  Like `ido-load-library`, it searches your
 `load-path`, but instead of loading the selected library,
 it visits the file in a buffer.
 
