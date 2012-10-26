@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/rolandwalker/ido-load-library.png)](http://travis-ci.org/rolandwalker/ido-load-library)
+[![Build Status](https://secure.travis-ci.org/rolandwalker/ido-load-library.png?branch=master)](http://travis-ci.org/rolandwalker/ido-load-library)
 
 Overview
 ========
