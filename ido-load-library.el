@@ -144,7 +144,7 @@
   "Load-library alternative using `ido-completing-read'."
   :version "0.1.2"
   :link '(emacs-commentary-link :tag "Commentary" "ido-load-library")
-  :link '(url-link :tag "Github" "http://github.com/rolandwalker/ido-load-library")
+  :link '(url-link :tag "GitHub" "http://github.com/rolandwalker/ido-load-library")
   :link '(url-link :tag "EmacsWiki" "http://emacswiki.org/emacs/IdoLoadLibrary")
   :prefix "ido-load-library-"
   :group 'abbreviations
