@@ -5,8 +5,8 @@
 ;; Author: Roland Walker <walker@pobox.com>
 ;; Homepage: http://github.com/rolandwalker/ido-load-library
 ;; URL: http://raw.github.com/rolandwalker/ido-load-library/master/ido-load-library.el
-;; Version: 0.1.2
-;; Last-Updated:  5 Oct 2012
+;; Version: 0.2.0
+;; Last-Updated: 28 Oct 2013
 ;; EmacsWiki: IdoLoadLibrary
 ;; Package-Requires: ((persistent-soft "0.8.8") (pcache "0.2.3"))
 ;; Keywords: maint, completion
@@ -142,7 +142,7 @@
 ;;;###autoload
 (defgroup ido-load-library nil
   "Load-library alternative using `ido-completing-read'."
-  :version "0.1.2"
+  :version "0.2.0"
   :link '(emacs-commentary-link :tag "Commentary" "ido-load-library")
   :link '(url-link :tag "GitHub" "http://github.com/rolandwalker/ido-load-library")
   :link '(url-link :tag "EmacsWiki" "http://emacswiki.org/emacs/IdoLoadLibrary")
