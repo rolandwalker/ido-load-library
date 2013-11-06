@@ -1,6 +1,6 @@
 ;;; ido-load-library.el --- Load-library alternative using ido-completing-read
 ;;
-;; Copyright (c) 2012 Roland Walker
+;; Copyright (c) 2012-13 Roland Walker
 ;;
 ;; Author: Roland Walker <walker@pobox.com>
 ;; Homepage: http://github.com/rolandwalker/ido-load-library
