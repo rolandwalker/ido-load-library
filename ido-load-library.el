@@ -4,7 +4,7 @@
 ;;
 ;; Author: Roland Walker <walker@pobox.com>
 ;; Homepage: http://github.com/rolandwalker/ido-load-library
-;; URL: http://raw.github.com/rolandwalker/ido-load-library/master/ido-load-library.el
+;; URL: http://raw.githubusercontent.com/rolandwalker/ido-load-library/master/ido-load-library.el
 ;; Version: 0.2.0
 ;; Last-Updated: 28 Oct 2013
 ;; EmacsWiki: IdoLoadLibrary
