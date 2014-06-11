@@ -313,7 +313,7 @@ universal prefix argument."
                           nil
                           nil
                           nil
-                          library-name-history)
+                          'library-name-history)
          (consp current-prefix-arg)))
   (load library))
 
