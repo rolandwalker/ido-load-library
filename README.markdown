@@ -21,7 +21,7 @@ libraries in your `load-path`.
 The interactive command `ido-load-library` is provided, though
 not bound to any key.  It can be executed via
 
-	M-x ido-load-library
+<kbd>M-x</kbd> <kbd>ido-load-library</kbd>
 
 or bound via something like
 
