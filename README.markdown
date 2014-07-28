@@ -8,7 +8,7 @@ Load-library alternative for Emacs using `ido-completing-read`.
 Quickstart
 ----------
 
-```lisp
+```elisp
 (require 'ido-load-library)
  
 ;; execute M-x ido-load-library RET
@@ -28,13 +28,13 @@ not bound to any key.  It can be executed via
 
 or bound via something like
 
-```lisp
+```elisp
 (define-key global-map (kbd "C-c l") 'ido-load-library)
 ```
 
 or safely aliased to `load-library`
 
-```lisp
+```elisp
 (defalias 'load-library 'ido-load-library)
 ```
 
