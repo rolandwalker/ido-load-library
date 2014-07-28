@@ -1,12 +1,10 @@
 [![Build Status](https://secure.travis-ci.org/rolandwalker/ido-load-library.png?branch=master)](http://travis-ci.org/rolandwalker/ido-load-library)
 
-Overview
-========
+# Overview
 
 Load-library alternative for Emacs using `ido-completing-read`.
 
-Quickstart
-----------
+## Quickstart
 
 ```elisp
 (require 'ido-load-library)
@@ -14,8 +12,7 @@ Quickstart
 ;; execute M-x ido-load-library RET
 ```
 
-command `ido-load-library`
---------------------------
+## command `ido-load-library`
 
 Ido-load-library is an alternative to `load-library` which uses
 `ido-completing-read` for completion against all available
@@ -38,16 +35,14 @@ or safely aliased to `load-library`
 (defalias 'load-library 'ido-load-library)
 ```
 
-command `ido-load-library-find`
--------------------------------
+## command `ido-load-library-find`
 
 The interactive command `ido-load-library-find` is also
 provided.  Like `ido-load-library`, it searches your
 `load-path`, but instead of loading the selected library,
 it visits the file in a buffer.
 
-Bugs
-----
+## Bugs
 
 When invalidating the disk cache, `ido-load-library` only checks
 whether `load-path` has changed, not whether new files were added
@@ -59,8 +54,7 @@ to existing paths.  Workarounds:
 3.  Give universal prefix argument to `ido-load-library`
     to force invalidation of the cache.
 
-Compatibility and Requirements
-------------------------------
+## Compatibility and Requirements
 
 	GNU Emacs version 24.4-devel     : yes, at the time of writing
 	GNU Emacs version 24.3           : yes
