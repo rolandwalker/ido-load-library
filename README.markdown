@@ -48,7 +48,7 @@ When invalidating the disk cache, `ido-load-library` only checks
 whether `load-path` has changed, not whether new files were added
 to existing paths.  Workarounds:
 
-1.  Install libraries using ELPA/package.el, in which case this
+1.  Install libraries using ELPA/`package.el`, in which case this
     assumption always works.
 2.  Wait for the cache to expire (7 days).
 3.  Give universal prefix argument to `ido-load-library`
