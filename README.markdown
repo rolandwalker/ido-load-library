@@ -4,6 +4,12 @@
 
 Load-library alternative for Emacs using `ido-completing-read`.
 
+ * [Quickstart](#quickstart)
+ * [command `ido-load-library`](#command-ido-load-library)
+ * [command `ido-load-library-find`](#command-ido-load-library-find)
+ * [Bugs](#bugs)
+ * [Compatibility and Requirements](#compatibility-and-requirements)
+
 ## Quickstart
 
 ```elisp
